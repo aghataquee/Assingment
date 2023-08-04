@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Blog</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWSkills Blog</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div class="headers">
+            <h2>PWSkills</h2>
+            <button type="submit" id="btn" onclick="showblogdetails()">+</button>
+        </div>
+    </header>
+    <div class="blog-details">
+        
+        <form class="blog-form">
+            <span>&times;</span>
+             <div>
+
+                <input type="text" placeholder="Enter Blog Post url">
+            </div>
+            <div><input type="text" placeholder="Enter Blog Title"></div>
+            <div>
+                <input type="text" placeholder="Enter Blog Description">
+            </div>
+             <div>
+            <input type="text" id="desc" placeholder="write">
+            </div>
+            <button type="submit" id="add-blog">Add Blog</button>
+        </form>
+    </div>
+    <div class="container"></div>
+    <script >
+        function showblogdetails(){
+            document.getElementsByClassName(".blog-form").classList.add("showform")
+        }
+    </script>
+</body>
+</html>
